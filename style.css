@@ -1,0 +1,106 @@
+:root {
+
+    --todobody: #121519;
+    --tddark: #111827;
+    --tdgreen: #448C74;
+    --tdred: #E75050;
+    --tdyellow: #EDCB50;
+    --tddark2: #1a1e23;
+}
+
+body {
+    background-color: var(--todobody);
+}
+
+.inputDiv {}
+
+#input {
+    outline: none;
+    border: none;
+    border-radius: 30px;
+    padding: 0.5rem 1rem;
+    margin: 0.25rem;
+    font-size: 1.15rem;
+}
+
+.inputDiv button {
+    border-radius: 50px;
+    background-color: var(--tdred)
+}
+
+h1 {
+
+    color: var(--tdyellow);
+    font-size: 3rem;
+    font-weight: 500;
+    text-align: center;
+    font-family: 'Hind', sans-serif;
+
+}
+
+.title {
+    color: var(--tdgreen);
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.card {
+
+
+    background-color: var(--todobody) !important;
+    border: none;
+    align-items: center;
+    margin-bottom: 1rem;
+
+
+}
+
+.card-body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: aqua;
+    width: 100%;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 20px;
+    background-color: var(--tddark2);
+    box-shadow: 1px 1px 3px 1px var(--tdyellow);
+
+
+}
+
+.btn {
+    width: 100%;
+    background-color: inherit;
+    border: none;
+    font-weight: 400;
+    font-size: 1.5rem;
+    transition: 1s;
+}
+
+.btn:hover {
+
+
+    transform: scale(1.4);
+}
+
+.btn:active {
+    transform: translateY(0.5rem);
+
+}
+
+.deleteButton {
+
+
+    color: var(--tdred);
+
+}
+
+.checkButton {
+    color: var(--tdgreen);
+}
+
+.editButton {
+    color: var(--tdyellow);
+}
