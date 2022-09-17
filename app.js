@@ -135,7 +135,7 @@ let changeActive = (e) => {
   } else if (completed[1] != "active") {
     completed.classList.add("active");
     todos.classList.remove("active");
-    getCompletedTodos();
+    loadtAllCompletedTodos();
   }
 };
 /**
@@ -145,7 +145,7 @@ let changeActive = (e) => {
  *
  */
 let completedToTodo = (e) => {
-  if (e.target.parentElement.className === "btn checkButton") {
+  if (e.target.className === "fas fa-check-circle") {
     e.target.parentElement.parentElement.parentElement.remove();
 
     addToCompletedTodosStorage(
@@ -255,6 +255,7 @@ addEventListener();
  */
 let loadtAllCompletedTodos = () => {
   let completed = getCompletedTodos();
+  console.log("loaaaa");
 
   cardbd.innerHTML = "";
   completed.forEach((x) => {
